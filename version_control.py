@@ -38,7 +38,7 @@ if __name__ == '__main__':
             password_encoded = encode(password)
 
         elif option == 2:
-            print(f"The encoded password is {password_encoded}, and the original password is {decode(password_encoded)}.")
+            pass
 
         elif option == 3:
             break
