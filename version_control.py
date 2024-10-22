@@ -13,15 +13,13 @@ def encode(password):
 
     return encoded_string
 
-
 def decode(password):
     decoded_password = ""
     for x in password:
         decoded_password += str(int(x)-3)
     return decoded_password
 
-if __name__ == '__main__':
-
+def main():
     while True:
 
         print("Menu")
@@ -44,5 +42,10 @@ if __name__ == '__main__':
         elif option == 3:
             break
         print()
+
+if __name__ == '__main__':
+
+    main()
+
 
 
