@@ -1,6 +1,6 @@
 
 #Sephora Pierre-Louis
-
+#encode function
 def encode(password):
     password_list = list(password)
     encoded_list = []
@@ -14,12 +14,15 @@ def encode(password):
 
     return encoded_string
 
+#Timothy Jin
+#decode function
 def decode(password):
     decoded_password = ""
     for x in password:
         decoded_password += str((int(x)+7)%10)
     return decoded_password
 
+#main function
 def main():
     while True:
 
