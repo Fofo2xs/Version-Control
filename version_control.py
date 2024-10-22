@@ -15,14 +15,15 @@ def encode(password):
 
 
 def decode(password):
-    pass
-
+    decoded_password = ""
+    for x in password:
+        decoded_password += str(int(x)-3)
+    return decoded_password
 
 if __name__ == '__main__':
 
     while True:
 
-        print()
         print("Menu")
         print("-------------")
         print("1. Encode")
@@ -38,10 +39,10 @@ if __name__ == '__main__':
             password_encoded = encode(password)
 
         elif option == 2:
-            pass
+            print("The encoded password is " + password_encoded  + ", and the original password is " + password + ".")
 
         elif option == 3:
             break
-
+        print()
 
 
